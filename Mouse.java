@@ -10,9 +10,26 @@ public class Mouse extends Actor
     {
         setRotation(270);
         move(10);
+        
+        if(isAtEdge())
+        {
+            resetMouse();
+        }
         if(isTouching(Bear.class))
         {
             getWorld().removeObject(this);
         }
+        
+    }
+    
+    public void resetMouse()
+    {
+        int num = Greenfoot.getRandomNumber(2);
+        int randomX = Greenfoot.getRandomNumber(400);
+        if(num == 0)
+        {
+            setLocation(randomX, 350);
+        }
+        
     }
 }
