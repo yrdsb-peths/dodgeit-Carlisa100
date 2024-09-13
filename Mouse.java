@@ -17,6 +17,8 @@ public class Mouse extends Actor
         }
         if(isTouching(Bear.class))
         {
+            Skull skull = new Skull();
+            getWorld().addObject(skull, 300, 200);
             getWorld().removeObject(this);
         }
         
