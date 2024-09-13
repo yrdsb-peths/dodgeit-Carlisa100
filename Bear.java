@@ -23,10 +23,5 @@ public class Bear extends Actor
         {
             setLocation(getX() - 5, getY());
         }
-        
-        if(Greenfoot.isKeyDown("space"))
-        {
-            getWorld().addObject(new Spell(), getX(), getY();
-        }
     }
 }

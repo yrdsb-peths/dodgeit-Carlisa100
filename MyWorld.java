@@ -20,5 +20,8 @@ public class MyWorld extends World
         Bear bear = new Bear();
         addObject(bear,150, 100);
         
+        Mouse mouse = new Mouse ();
+        addObject(mouse, 400, 350); 
+        
     }
 }
